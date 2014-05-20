@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
+
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example.j2eeapp</groupId>
@@ -49,11 +49,19 @@
 			<artifactId>spring-orm</artifactId>
 			<version>3.1.1.RELEASE</version>
 		</dependency>
-		<dependency>
+		<!--  <dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc14</artifactId>
 			<version>10.2.0.1.0</version>
+		</dependency>-->
+
+		<!-- ORACLE database driver -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>12.1.0.1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -103,12 +111,12 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>3.1.0.RELEASE</version>
+			<version>3.2.3.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-			<version>3.1.0.RELEASE</version>
+			<version>3.2.3.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.primefaces</groupId>
@@ -126,6 +134,13 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.1.8.Final</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.3-1101-jdbc41</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
