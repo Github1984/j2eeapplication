@@ -49,13 +49,14 @@
 			<artifactId>spring-orm</artifactId>
 			<version>3.1.1.RELEASE</version>
 		</dependency>
-		<!--  <dependency>
+		<!--  ORACLE database driver for Oracle 11g
+		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc14</artifactId>
 			<version>10.2.0.1.0</version>
 		</dependency>-->
 
-		<!-- ORACLE database driver -->
+		<!-- ORACLE database driver for Oracle 12c-->
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
