@@ -1,9 +1,12 @@
 package com.example.j2eeapp.domain;
 
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.security.authentication.encoding.PasswordEncoder;
+
+import com.example.j2eeapp.commons.domain.BaseEntity;
 
 /**
  * Entity to hold application user data - first name, last name, etc. 
@@ -11,10 +14,10 @@ import org.springframework.security.authentication.encoding.PasswordEncoder;
  * @author Arthur Zhaoqun 
  */
  
-/*@Entity 
-@Table(name="appuser")*/
-public class UserEntity implements Serializable{	
-	private static final long serialVersionUID = 9014169812363387062L;
+@Entity 
+@Table(name="appuser")
+public class UserEntity extends BaseEntity{	
+	private static final long serialVersionUID = -8789920463809744548L;
 	
 	private String firstName;	 
     private String lastName;
